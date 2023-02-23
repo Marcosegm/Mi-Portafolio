@@ -20,6 +20,13 @@ a {
 ul {
     list-style: none;
 }
+.arrow {
+    background-color: white;
+    border-radius: 50%;
+}
+h1,h2,h3,p {
+    color: var(--white);
+}
 /*CSS DEL HEADER*/
 header {
     width: 100%;
@@ -31,24 +38,22 @@ header {
     height: 100px;
     display: flex;
     align-items: center; 
-    
 }
-.header__container-items {
+.header__container-elements {
     width: 100%;
     display: flex;
     justify-content: space-between; 
 }
-.header__container-items p {
+.header__container-elements p {
     font-size: 3rem;
     color: var(--white);
 }
-.header__container-items .header__nav ul {
+.header__container-elements .header__nav ul {
     display: flex;
-    font-size: 2rem;
     width: 235px;
     justify-content: space-around;
+    
 }
-
 /*Main*/ 
 .main__container {
     width: 100%;
@@ -57,19 +62,21 @@ header {
 }
 /*CSS DE LA SECCION ABOUTUS*/
 .main__container-intro {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: center;
     padding-bottom: 20px;
 }
 .intro__descripcion {
     color: var(--white);
     font-size: 2rem;
 }
+.intro__descripcion h2 {
+    padding-bottom: 15px;
+}
 .intro__descripcion h2 span {
-    text-decoration: underline 5px var(--smoke-black);
+    text-decoration: underline 5px var(--white);
 }
 .intro__descripcion ul {
     width: 100%;
@@ -77,20 +84,96 @@ header {
     padding-top: 28px;
     display: flex;
     justify-content: space-between;
-    
 }
 .intro__descripcion ul li a {
     color: white;
+    font-weight: bolder;
 }
 .intro__img__container {
     /* background-color: var(--smoke-black); */
     width: 80%;
     display: flex;
     align-items: center;
-    justify-content: center;
-
-    
+    justify-content: center;  
 }
-.aboutUs__img-container img {
-   
+/*SOBRE MI*/
+.main__container-sobreMi {
+    width: 100%;
+    height: 300px;    
+    padding: 15px 0;
+    background-color: var(--smoke-black);
+    display: flex;
+    align-items: center;
+}
+.main__container-sobreMi div {
+    width: 80%;
+    margin: 0 auto;    
+}
+.main__container-sobreMi h2 {
+    color: var(--white);
+    font-size: 3rem;
+    font-weight: bolder;
+}
+.main__container-sobreMi p {
+    color: var(--white);
+    font-size: 1.8rem;
+    width: 90%;
+    text-align: justify;
+    padding-top: 15px;
+    line-height: 3.5rem;
+}
+/* SKILLS*/
+.main__container-skills-Hobbies {
+    width: 80%;
+    padding-top: 35px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.main__container-skills-Hobbies h3 {
+    font-size: 4rem;
+    padding-bottom: 25px;
+}
+.grid-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 25px;
+}
+.post-container {
+    width: 130px;
+    height: 130px;
+    border-radius: 30px;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.post-container svg {
+    width: 50px;
+    padding-bottom: 15px;
+}
+.post-container img {
+    width: 50px;
+    padding-bottom: 15px;
+}
+.post-container p {
+    color: #242424;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+/*Formacion*/
+.main__container-formacion {
+    width: 100%;
+    padding-top: 35px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    background-color: var(--white);
 }
