@@ -1,0 +1,96 @@
+:root {
+    
+    --black: #151515;
+    --white: #ffffff;
+    --smoke-black: #242424;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+ul {
+    list-style: none;
+}
+/*CSS DEL HEADER*/
+header {
+    width: 100%;
+    background-color: var(--black);
+}
+.header__container {
+    width: 80%;
+    margin: 0 auto;
+    height: 100px;
+    display: flex;
+    align-items: center; 
+    
+}
+.header__container-items {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+}
+.header__container-items p {
+    font-size: 3rem;
+    color: var(--white);
+}
+.header__container-items .header__nav ul {
+    display: flex;
+    font-size: 2rem;
+    width: 235px;
+    justify-content: space-around;
+}
+
+/*Main*/ 
+.main__container {
+    width: 100%;
+    background-color: var(--black);
+
+}
+/*CSS DE LA SECCION ABOUTUS*/
+.main__container-intro {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.intro__descripcion {
+    color: var(--white);
+    font-size: 2rem;
+}
+.intro__descripcion h2 span {
+    text-decoration: underline 5px var(--smoke-black);
+}
+.intro__descripcion ul {
+    width: 100%;
+    font-size: 1.5rem;
+    padding-top: 28px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.intro__descripcion ul li a {
+    color: white;
+}
+.intro__img__container {
+    /* background-color: var(--smoke-black); */
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+.aboutUs__img-container img {
+   
+}
