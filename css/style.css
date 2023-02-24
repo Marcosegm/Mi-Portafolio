@@ -43,6 +43,7 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-between; 
+    z-index: 1;
 }
 .header__container-elements p {
     font-size: 3rem;
@@ -52,6 +53,7 @@ header {
     display: flex;
     width: 235px;
     justify-content: space-around;
+    
     
 }
 /*Main*/ 
@@ -72,6 +74,10 @@ header {
     color: var(--white);
     font-size: 2rem;
 }
+.banderaEc {
+    width: 20px;
+    height: 20px;
+}
 .intro__descripcion h2 {
     padding-bottom: 15px;
 }
@@ -90,17 +96,30 @@ header {
     font-weight: bolder;
 }
 .intro__img__container {
-    /* background-color: var(--smoke-black); */
     width: 80%;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;  
 }
+.intro__img__container div {
+    background-color: var(--smoke-black);
+    position: absolute;
+    width: 80%;
+    height: 350px;
+    top: -215px;
+    display: flex;
+    justify-content: center;
+}
+.intro__img__container div img {
+    position: absolute;
+    bottom: 0;
+    width: 236px;
+}
 /*SOBRE MI*/
 .main__container-sobreMi {
     width: 100%;
-    height: 300px;    
-    padding: 15px 0;
+    height: 400px;    
     background-color: var(--smoke-black);
     display: flex;
     align-items: center;
@@ -122,7 +141,7 @@ header {
     padding-top: 15px;
     line-height: 3.5rem;
 }
-/* SKILLS*/
+/* SKILLS Y HOBBIES*/
 .main__container-skills-Hobbies {
     width: 80%;
     padding-top: 35px;
@@ -166,14 +185,32 @@ header {
     font-weight: bolder;
     font-size: 2rem;
 }
-/*Formacion*/
+/*FORMACION*/
 .main__container-formacion {
     width: 100%;
     padding-top: 35px;
+    background-color: var(--white);
+}
+.main__container-formacion h2 {
+    color: var(--smoke-black);
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bolder;  
+}
+.main__container-formacion div {
+    display: flex;
+    width: 80%;
     margin: 0 auto;
+    padding: 20px 20px;  
+}
+
+.post-container-formacion {
+    width: 280px;
+    height: 280px;
+    background-color: var(--smoke-black);
     display: flex;
     flex-direction: column;
+    text-align: center;
+    justify-content: center;
     align-items: center;
-    padding-bottom: 20px;
-    background-color: var(--white);
 }
