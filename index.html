@@ -40,9 +40,7 @@
                 </ul>
             </div>
             <div class="intro__img__container">
-                <div>
-                    <img src="./assets/Foto.png" alt="">
-                </div>
+                <img src="./assets/Foto.png" alt="">
             </div>
         </section>
 
@@ -192,17 +190,36 @@
         </section> 
         <section class="main__container-contacto">
             <div class="grid-container-contacto">
-                <div class="container-texto">
-
+                <div class="container-texto-contacto">
+                    <h2>Contacto</h2>
+                    <p>Quieres contactarme?</p>
+                    <p>Por favor, complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</p>
                 </div>
                 <div class="container-formulario">
-
+                    <form action="#" method="POST">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required><br>
+                    
+                        <label for="correo">Correo Electrónico:</label>
+                        <input type="email" id="correo" name="correo" required><br>
+                    
+                        <label for="asunto">Asunto:</label>
+                        <input type="text" id="asunto" name="asunto" required><br>
+                    
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br>
+                    
+                        <input type="submit" value="Enviar">
+                    </form>
                 </div>
+
             </div>
         </section>
     </main>
     <footer>
-
+        <div class="footer__container">
+            <p class="footer__text">Derechos reservados © 2023 - Marcos Guzmán M.</p>
+          </div>
     </footer>
 </body>
 </html>

@@ -49,14 +49,13 @@ header {
 }
 .header__container-elements p {
     font-size: 3rem;
-    color: var(--white);
+    color: gray;
+    font-weight: bolder;
 }
 .header__container-elements .header__nav ul {
     display: flex;
     width: 235px;
     justify-content: space-around;
-    
-    
 }
 
 
@@ -64,13 +63,13 @@ header {
 .main__container {
     width: 100%;
     background-color: var(--black);
-
 }
 
 
 /*CSS DE LA SECCION ABOUTUS*/
 .main__container-intro {
     width: 80%;
+    height: 45vh;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -79,6 +78,7 @@ header {
 .intro__descripcion {
     color: var(--white);
     font-size: 2rem;
+    width: 70%;
 }
 .banderaEc {
     width: 20px;
@@ -86,9 +86,13 @@ header {
 }
 .intro__descripcion h2 {
     padding-bottom: 15px;
+    color: gray;
 }
 .intro__descripcion h2 span {
     text-decoration: underline 5px var(--white);
+}
+.intro__descripcion p {
+    display: none;
 }
 .intro__descripcion ul {
     width: 100%;
@@ -102,27 +106,18 @@ header {
     font-weight: bolder;
 }
 .intro__img__container {
-    width: 80%;
+    width: 30%;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;  
 }
-.intro__img__container div {
-    background-color: var(--smoke-black);
+.intro__img__container img {
     position: absolute;
-    width: 80%;
-    height: 350px;
-    top: -215px;
-    display: flex;
-    justify-content: center;
+    width: 275px;
+    height: 316px;
+    right: 0;
 }
-.intro__img__container div img {
-    position: absolute;
-    bottom: 0;
-    width: 236px;
-}
-
 
 /*SOBRE MI*/
 .main__container-sobreMi {
@@ -175,9 +170,9 @@ header {
     width: 130px;
     height: 130px;
     border-radius: 30px;
-    background-color: var(--white);
-    
-    border:5px solid var(--smoke-black);
+    /* background-color: var(--white); */
+    border-bottom:5px solid var(--smoke-black);
+    border-top: 5px solid var(--smoke-black);
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -193,7 +188,7 @@ header {
     padding-bottom: 15px;
 }
 .post-container p {
-    color: #242424;
+    color: white;
     font-weight: bolder;
     font-size: 2rem;
 }
@@ -350,3 +345,47 @@ header {
 
 
 /*Formulario*/
+.main__container-contacto {
+    width: 100%;
+    padding-top: 35px;
+    background-color: var(--smoke-black);
+    height: 50vh;
+}
+.grid-container-contacto {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 20px 20px;  
+    display: flex;
+}
+.container-texto-contacto {
+    width: 100%;
+}
+.container-formulario {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/*FOOTER*/
+footer {
+    width: 100%;
+    background-color: var(--smoke-black);
+}
+.footer__container {
+    width: 80%;
+    height: 10vh;
+    margin: 0 auto;
+    text-align: center;
+    border-top: 2px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer__text {
+    font-size: 1.2rem;
+}
