@@ -1,0 +1,13 @@
+.header__container-elements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.header__nav {
+    display: none;
+}
+.main__container-intro {
+    flex-direction: column-reverse;
+
+}
