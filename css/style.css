@@ -117,7 +117,7 @@ header {
     justify-content: center;  
 }
 .intro__img__container img {
-    height: 326px;
+    height: 280px;
     right: 0;
     border-radius: 50% ;
     border: 5px solid white;
@@ -419,7 +419,7 @@ header {
     background: none;
     outline: none;
     border: none;
-    margin-top: 50px;
+    margin-top: 10px;
     border-bottom: 3px solid gray;
     margin-left: 211px;
     cursor: pointer;
