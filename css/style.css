@@ -1,5 +1,4 @@
 :root {
-    
     --black: #151515;
     --white: #ffffff;
     --smoke-black: #242424;
@@ -132,6 +131,7 @@ header {
 .main__container-sobreMi div {
     width: 80%;
     margin: 0 auto;    
+    padding: 36px 0;
 }
 .main__container-sobreMi h2 {
     color: var(--white);
@@ -204,29 +204,27 @@ header {
 .main__container-formacion {
     width: 100%;
     padding-top: 35px;
-    background-color: var(--white);
+    background-color: var(--smoke-black);
 }
 .main__container-formacion h2 {
-    color: var(--smoke-black);
+    color: var(--white);
     text-align: center;
     font-size: 4rem;
     font-weight: bolder;  
 }
-.grid-container-formacion {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px 20px;  
+.grid-container-formacion {  
     display: flex;
     flex-wrap: wrap; 
     justify-content: center;
+    align-items: center;
 }
 .post-container-formacion {
     width: 256px;
     height: 252px;
     margin: 35px;
-    border:5px solid var(--smoke-black);
+    border: 2px solid var(--black);
     border-radius: 25px;
-    box-shadow: 5px 10px #888888;
+    box-shadow: 5px 10px var(--black);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -237,12 +235,12 @@ header {
     padding-bottom: 30px;
 }
 .post-container-formacion h3 {
-    color: var(--black);
+    color: var(--white);
     font-size: 1.8rem;
     font-weight: bold;  
 }
 .post-container-formacion p {
-    color: var(--smoke-black);
+    color: var(--white);
     font-size: 1rem;
     font-weight: 700;
 }
@@ -260,18 +258,17 @@ header {
     font-weight: bolder;  
 }
 .grid-container-proyectos {
-    width: 80%;
-    margin: 0 auto;
     padding: 20px 20px;  
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .post-container-proyectos {
     width: 450px;
     height: 460px;
     background-color: var(--smoke-black);
     margin-bottom: 45px;
+    margin: 35px;
 }
 .container-image {
     position: relative;
@@ -386,7 +383,6 @@ header {
     height: auto;
 }
 .container-formulario .input-box {
-    /* width: 390px; */
     width: 100%;
     height: 40px;
     color: white;
@@ -409,7 +405,7 @@ header {
     resize: none;
 }
 .form-btn {
-    width: 100%;
+    width: 30%;
     height: 40px;
     color: white;
     background: none;
@@ -437,4 +433,36 @@ footer {
 }
 .footer__text {
     font-size: 1.2rem;
+}
+
+@media (max-width:600px) {
+    .header__container-elements {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header__nav {
+        padding: 20px 0;
+    }
+    .intro__descripcion h2 {
+        margin-top: 15px;
+    }
+}
+@media (max-width:992px) {
+    .main__container-intro {
+        flex-direction: column-reverse;
+    }
+    .navegacion {
+        display: none;
+    }
+    .grid-container-contacto {
+        flex-direction: column;
+    }
+    .container-texto-contacto {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .container-formulario {
+        margin: 0 auto;  
+    }
 }
