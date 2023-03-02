@@ -1,13 +1,39 @@
-.header__container-elements {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-}
+/*600px y menores */
+
 .header__nav {
     display: none;
 }
 .main__container-intro {
     flex-direction: column-reverse;
-
+}
+.intro__descripcion h2 {
+    margin-top: 15px;
+}
+.navegacion {
+    display: none;
+}
+.post-container-formacion {
+    min-width: 240px;
+    height: 287px;
+}
+.grid-container {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+.grid-container-formacion {
+    flex-direction: column;
+    align-items: center;
+}
+.grid-container-contacto {
+    flex-direction: column;
+    width: 100%;
+}
+.container-texto-contacto {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+.container-formulario {
+    margin: 0 auto;  
 }

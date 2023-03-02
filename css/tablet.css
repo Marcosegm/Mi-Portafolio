@@ -1,0 +1,23 @@
+/*entre 600px - 992px*/
+.main__container-intro {
+    flex-direction: column-reverse;
+}
+.navegacion {
+    display: none;
+}
+.grid-container {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+.grid-container-contacto {
+    flex-direction: column;
+}
+.container-texto-contacto {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+.container-formulario {
+    margin: 0 auto;  
+}
