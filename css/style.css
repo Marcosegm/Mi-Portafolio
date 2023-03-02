@@ -169,14 +169,13 @@ header {
 .grid-container {
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    padding-bottom: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .post-container-skills {
     width: 130px;
     height: 130px;
     border-radius: 30px;
-    /* background-color: var(--white); */
     border-bottom:5px solid var(--smoke-black);
     border-top: 5px solid var(--smoke-black);
     display: flex;
@@ -184,6 +183,7 @@ header {
     text-align: center;
     justify-content: center;
     align-items: center;
+    margin: 25px;
 }
 .post-container-skills svg {
     width: 50px;
@@ -217,14 +217,13 @@ header {
     margin: 0 auto;
     padding: 20px 20px;  
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
+    justify-content: center;
 }
 .post-container-formacion {
-    width: 100%;
-    max-width: 287px;
-    height: 338px;
-    margin-bottom: 35px;
+    width: 256px;
+    height: 252px;
+    margin: 35px;
     border:5px solid var(--smoke-black);
     border-radius: 25px;
     box-shadow: 5px 10px #888888;
@@ -379,7 +378,7 @@ header {
     padding: 5px;
 }
 .container-texto-contacto h2{
-   font-size: 6rem;
+   font-size: 4rem;
 }
 
 .container-formulario {

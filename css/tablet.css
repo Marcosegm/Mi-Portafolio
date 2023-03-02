@@ -5,11 +5,7 @@
 .navegacion {
     display: none;
 }
-.grid-container {
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-}
+
 .grid-container-contacto {
     flex-direction: column;
 }
