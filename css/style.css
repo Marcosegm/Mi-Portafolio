@@ -1,7 +1,7 @@
 :root {
     --black: #151515;
-    --white: #ffffff;
-    --smoke-black: #242424;
+    --smoke-black: #242424; 
+    --white: #dfdfe2;
 }
 * {
     box-sizing: border-box;
@@ -27,11 +27,35 @@ h1,h2,h3,p {
     color: var(--white);
 }
 
-
+/*BARRA DE NAVEGACION*/
+.navegacion {
+    width: 100%;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid gray;
+    position: fixed;
+    background-color: black;
+    z-index: 2;
+}
+.navegacion ul {
+    width: 60%;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    
+}
 /*CSS DEL HEADER*/
 header {
     width: 100%;
     background-color: var(--black);
+    padding-top: 60px;
+}
+
+.navegacion ul li a {
+    color: white;
+    font-weight: bolder;
 }
 .header__container {
     width: 80%;
@@ -39,6 +63,7 @@ header {
     height: 100px;
     display: flex;
     align-items: center; 
+   
 }
 .header__container-elements {
     width: 100%;
@@ -66,7 +91,7 @@ header {
 }
 
 
-/*CSS DE LA SECCION SOBRE MI*/
+/*INTRO*/
 .main__container-intro {
     width: 80%;
     margin: 0 auto;
@@ -97,16 +122,12 @@ header {
     color: white;
     text-shadow: 1px 1px 2px gray;
 }
-.intro__descripcion ul {
-    width: 100%;
-    font-size: 1.5rem;
-    padding-top: 28px;
-    display: flex;
-    justify-content: space-between;
-}
-.intro__descripcion ul li a {
-    color: white;
+.intro__descripcion p:nth-child(3) {
+    color: var(--white);
+    font-size: 2rem;
+    display: none;
     font-weight: bolder;
+    padding-top: 10px;
 }
 .intro__img__container {
     width: 30%;
@@ -154,7 +175,6 @@ header {
     height: auto;
 }
 .main__container-skills-Hobbies {
-    width: 80%;
     padding-top: 35px;
     margin: 0 auto;
     display: flex;
@@ -264,7 +284,8 @@ header {
     justify-content: center;
 }
 .post-container-proyectos {
-    width: 450px;
+    min-width: 375px;
+    max-width: 450px;
     height: 460px;
     background-color: var(--smoke-black);
     margin-bottom: 45px;
@@ -278,6 +299,7 @@ header {
 .image {
     width: 100%;
     height: 315px;
+    object-fit: cover;
     display: block;
     border-bottom: 5px solid gray;
 }
@@ -322,7 +344,6 @@ header {
 }
 .contenedor-botones {
     display: flex;
-    justify-content: space-around;
     margin-top: 15px;
 }
 .boton-repositorio {
@@ -333,6 +354,7 @@ header {
     font-size: 1.5rem;
     font-weight: bold;
     padding-top: 7px;
+    margin: 0 15px;
 }
 .boton-verDemo {
     width: 130px;
@@ -446,12 +468,24 @@ footer {
     .intro__descripcion h2 {
         margin-top: 15px;
     }
+    .intro__descripcion p:nth-child(3) {
+        display: block;
+    }
 }
 @media (max-width:992px) {
+    header {
+        padding-top: 10px;
+    }
     .main__container-intro {
         flex-direction: column-reverse;
     }
     .navegacion {
+        display: none;
+    }
+    .main__container-sobreMi p {
+        width: 100%;
+    }
+    .sobreMi__p2 {
         display: none;
     }
     .grid-container-contacto {
@@ -465,4 +499,5 @@ footer {
     .container-formulario {
         margin: 0 auto;  
     }
+
 }
