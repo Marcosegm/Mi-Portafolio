@@ -18,9 +18,17 @@
     justify-content: space-between;
     padding-right: 25px;
 }
+
 .navegacion ul li a {
     color: white;
     font-weight: bolder;
+}
+.navegacion ul li a:hover {
+    text-decoration: 4px underline gray;
+    
+    
+    
+    
 }
 @media (max-width: 1210px ){
     .navegacion ul {
