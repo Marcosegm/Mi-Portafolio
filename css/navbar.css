@@ -24,11 +24,7 @@
     font-weight: bolder;
 }
 .navegacion ul li a:hover {
-    text-decoration: 4px underline gray;
-    
-    
-    
-    
+    text-decoration: 4px underline gray;    
 }
 @media (max-width: 1210px ){
     .navegacion ul {
